@@ -68,6 +68,11 @@
 
     <config-file target="AndroidManifest.xml" parent="/manifest/application/activity">
            <meta-data android:name="asset_statements" android:resource="@string/asset_statements" />
+            <string name="asset_statements" translatable="false">
+  [{
+    \"include\": \"https://biscord.com/.well-known/assetlinks.json\"
+  }]
+  </string>
       <intent-filter android:autoVerify="true">
         <action android:name="android.intent.action.VIEW" />
         <category android:name="android.intent.category.DEFAULT" />
