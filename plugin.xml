@@ -67,33 +67,15 @@
     <source-file src="src/android/nl/xservices/plugins/LaunchMyApp.java" target-dir="src/nl/xservices/plugins"/>
 
     <config-file target="AndroidManifest.xml" parent="/manifest/application/activity">
-           <meta-data android:name="asset_statements" android:resource="@string/asset_statements" />
- <resources>
-<string name="asset_statements" translatable="false">
-  [{
-    \"include\": \"https://biscord.com/.well-known/assetlinks.json\"
-  }]
-  </string>
-</resources>
-      <intent-filter android:autoVerify="true">
+      <intent-filter >
         <action android:name="android.intent.action.VIEW" />
         <category android:name="android.intent.category.DEFAULT" />
         <category android:name="android.intent.category.BROWSABLE" />
         <data android:scheme="$URL_SCHEME"/>
       </intent-filter>
-      <intent-filter android:autoVerify="true">
-        <action android:name="android.intent.action.VIEW" />
-        <category android:name="android.intent.category.DEFAULT" />
-        <category android:name="android.intent.category.BROWSABLE" />
-        <data android:scheme="$ANDROID_SCHEME"
-              android:host="$ANDROID_HOST"
-              android:pathPrefix="$ANDROID_PATHPREFIX"/>
-        <data   android:scheme="$ANDROID_TWO_SCHEME"
-              android:host="$ANDROID_TWO_HOST"
-              android:pathPrefix="$ANDROID_TWO_PATHPREFIX"/>
-      </intent-filter>
-       <intent-filter android:autoVerify="true">
+      <intent-filter android:autoVerify="true" >
         <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+        <action android:name="android.intent.action.VIEW" />
         <category android:name="android.intent.category.DEFAULT" />
         <category android:name="android.intent.category.BROWSABLE" />
         <data android:scheme="$ANDROID_SCHEME"
