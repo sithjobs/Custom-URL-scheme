@@ -74,7 +74,7 @@
         <category android:name="android.intent.category.BROWSABLE" />
         <data android:scheme="$URL_SCHEME"/>
       </intent-filter>
-      <intent-filter android:autoVerify="true" >
+      <intent-filter  >
         <action android:name="android.intent.action.VIEW" />
         <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
         <category android:name="android.intent.category.DEFAULT" />
