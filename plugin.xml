@@ -74,7 +74,7 @@
         <category android:name="android.intent.category.BROWSABLE" />
         <data android:scheme="$URL_SCHEME"/>
       </intent-filter>
-      <intent-filter>
+      <intent-filter android:autoVerify="true">
         <action android:name="android.intent.action.VIEW" />
         <category android:name="android.intent.category.DEFAULT" />
         <category android:name="android.intent.category.BROWSABLE" />
@@ -82,7 +82,7 @@
               android:host="$ANDROID_HOST"
               android:pathPrefix="$ANDROID_PATHPREFIX"/>
       </intent-filter>
-      <intent-filter  >
+      <intent-filter android:autoVerify="true">
       <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
         <category android:name="android.intent.category.DEFAULT" />
         <category android:name="android.intent.category.BROWSABLE" />
@@ -90,7 +90,7 @@
               android:host="$ANDROID_HOST"
               android:pathPrefix="$ANDROID_PATHPREFIX"/>
       </intent-filter>
-      <intent-filter>
+      <intent-filter android:autoVerify="true">
         <action android:name="android.intent.action.VIEW" />
         <category android:name="android.intent.category.DEFAULT" />
         <category android:name="android.intent.category.BROWSABLE" />
@@ -98,7 +98,7 @@
               android:host="$ANDROID_TWO_HOST"
               android:pathPrefix="$ANDROID_TWO_PATHPREFIX"/>
       </intent-filter>
-      <intent-filter>
+      <intent-filter android:autoVerify="true">
         <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
         <category android:name="android.intent.category.DEFAULT" />
         <category android:name="android.intent.category.BROWSABLE" />
