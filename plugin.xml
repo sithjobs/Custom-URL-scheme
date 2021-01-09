@@ -82,6 +82,7 @@
         <data android:scheme="$ANDROID_SCHEME"
               android:host="$ANDROID_HOST"
               android:pathPrefix="$ANDROID_PATHPREFIX"/>
+        <data android:scheme="https" />
       </intent-filter>
       <intent-filter android:autoVerify="true">
         <action android:name="android.nfc.action.TECH_DISCOVERED"/>
@@ -91,6 +92,7 @@
         <data   android:scheme="$ANDROID_TWO_SCHEME"
               android:host="$ANDROID_TWO_HOST"
               android:pathPrefix="$ANDROID_TWO_PATHPREFIX"/>
+        <data android:scheme="https" />
       </intent-filter>
     </config-file>
   </platform>
