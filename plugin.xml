@@ -40,6 +40,10 @@
           <array>
             <string>$URL_SCHEME</string>
           </array>
+          <key>com.apple.developer.associated-domains</key>
+         <array>
+           <string>applinks:biscord.com</string>
+        </array>
         </dict>
       </array>
     </config-file>
